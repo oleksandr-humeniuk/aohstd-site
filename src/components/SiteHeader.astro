@@ -1,0 +1,57 @@
+---
+const { active = "home" } = Astro.props;
+const links = [
+  { href: "/", label: "Home", key: "home" },
+  { href: "/privacy", label: "Privacy", key: "privacy" },
+  { href: "/terms", label: "Terms", key: "terms" },
+];
+---
+<header class="site-header glass">
+  <div class="container nav">
+    <a class="brand" href="/" aria-label="AOHSTD Home">
+      <div class="logo" aria-hidden="true">A</div>
+      <span>AOHSTD</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      {links.map((l) => (
+        <a class={l.key === active ? "active" : ""} href={l.href}>{l.label}</a>
+      ))}
+      <a class="link" href="mailto:support@aohstd.com">support@aohstd.com</a>
+    </nav>
+
+    <button class="icon-btn menu" id="menuBtn" aria-label="Open menu" aria-haspopup="dialog" aria-controls="mobileMenu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-sheet" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="backdrop" id="menuBackdrop"></div>
+  <div class="panel">
+    {links.map((l) => (
+      <a href={l.href}>
+        <span>{l.label}</span>
+        <span aria-hidden="true">›</span>
+      </a>
+    ))}
+    <div class="meta">
+      Contact: <a href="mailto:support@aohstd.com">support@aohstd.com</a>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  const backdrop = document.getElementById('menuBackdrop');
+
+  function openMenu(){ menu.classList.add('open'); document.documentElement.style.overflow = 'hidden'; }
+  function closeMenu(){ menu.classList.remove('open'); document.documentElement.style.overflow = ''; }
+
+  btn?.addEventListener('click', openMenu);
+  backdrop?.addEventListener('click', closeMenu);
+  window.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+</script>

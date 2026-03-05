@@ -1,0 +1,354 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const EFFECTIVE_DATE = "March 5, 2026";
+---
+
+<BaseLayout
+  title="Terms of Use — ShelfSkin"
+  description="Terms that govern your access to and use of ShelfSkin: Scan & Track Skincare."
+  active="terms"
+>
+  <header class="policy-header">
+    <span class="badge">Effective Date: {EFFECTIVE_DATE}</span>
+    <h1>Terms of Use</h1>
+    <p>
+      These Terms of Use ("Terms") govern your access to and use of the
+      ShelfSkin mobile application and related websites (collectively, the
+      "Service"), operated by AOHSTD ("we", "our", or "us"). By accessing or
+      using the Service, you agree to be bound by these Terms.
+    </p>
+  </header>
+
+  <!-- ─── IMPORTANT NOTICE ─── -->
+  <div class="note" style="margin-top: 18px;">
+    <strong>Important:</strong> ShelfSkin is not a medical application. The
+    Service is powered by artificial intelligence and provides general skincare
+    information for educational purposes only. It is not medical advice, and
+    results are not guaranteed to be accurate or complete. Always consult a
+    qualified dermatologist or healthcare provider for specific skin concerns.
+    See <a href="#disclaimer" style="color: #7C2D12; font-weight: 700;">Section 8</a> for full details.
+  </div>
+
+  <!-- ─── 1. ACCEPTANCE ─── -->
+  <div class="section" id="acceptance">
+    <h2>1. Acceptance of Terms</h2>
+    <div class="card">
+      <p>
+        If you do not agree to these Terms, do not use the Service. You agree to
+        comply with all applicable laws, regulations, and platform rules
+        (including Google Play and Apple App Store policies).
+      </p>
+    </div>
+  </div>
+
+  <!-- ─── 2. ELIGIBILITY ─── -->
+  <div class="section" id="eligibility">
+    <h2>2. Eligibility</h2>
+    <div class="card">
+      <p>
+        You must be at least 13 years of age (or the equivalent minimum age in
+        your jurisdiction) to use the Service. If you are under 18, you
+        represent that you have your parent's or legal guardian's permission to
+        use the Service.
+      </p>
+    </div>
+  </div>
+
+  <!-- ─── 3. DESCRIPTION OF SERVICE ─── -->
+  <div class="section" id="description">
+    <h2>3. Description of the Service</h2>
+    <div class="card">
+      <p>
+        ShelfSkin is a skincare product management tool that allows you to:
+      </p>
+      <ul>
+        <li>Scan product ingredient lists using your device camera</li>
+        <li>Build and manage a digital shelf of your skincare products</li>
+        <li>Detect potential ingredient conflicts and synergies between products</li>
+        <li>Track product expiry dates and receive reminders</li>
+        <li>Receive personalized skincare tips based on your profile and products</li>
+      </ul>
+      <p>
+        Product scanning uses a third-party AI service (Anthropic) to identify
+        ingredients from product labels. Accuracy of scan results depends on
+        image quality, label legibility, and product database coverage.
+      </p>
+    </div>
+  </div>
+
+  <!-- ─── 4. USE OF SERVICE ─── -->
+  <div class="section" id="license">
+    <h2>4. Use of the Service</h2>
+    <div class="card">
+      <p>
+        Subject to these Terms, we grant you a limited, non-exclusive,
+        non-transferable, revocable license to access and use the Service for
+        personal, non-commercial purposes.
+      </p>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Misuse the Service or interfere with its normal operation</li>
+        <li>Attempt to reverse engineer, decompile, or bypass security measures</li>
+        <li>Use the Service to violate laws or third-party rights</li>
+        <li>Submit intentionally false or misleading content</li>
+        <li>Use automated tools (bots, scrapers) to access the Service</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ─── 5. SUBSCRIPTIONS ─── -->
+  <div class="section" id="billing">
+    <h2>5. Subscriptions and Billing</h2>
+    <div class="card">
+      <p>
+        ShelfSkin offers a free tier with limited features and an optional
+        premium subscription ("ShelfSkin Pro") with additional features such as
+        unlimited scans, full conflict and synergy detection, expiry tracking,
+        and personalized insights.
+      </p>
+      <p>
+        Billing is processed entirely by the platform provider (Google Play or
+        Apple App Store). Subscription details — including price, billing cycle,
+        renewal, and cancellation — are presented at the time of purchase and
+        are governed by the platform provider's terms.
+      </p>
+      <p>
+        Subscriptions automatically renew unless cancelled before the end of
+        the current billing period through the platform provider's subscription
+        management settings.
+      </p>
+    </div>
+  </div>
+
+  <!-- ─── 6. USER CONTENT ─── -->
+  <div class="section" id="content">
+    <h2>6. User Content</h2>
+    <div class="card">
+      <p>
+        You may submit content to the Service, including product images for
+        scanning, product data, and profile information ("User Content"). You
+        retain ownership of your User Content.
+      </p>
+      <p>
+        You grant us a limited license to process, transmit, and temporarily
+        store User Content solely for the purpose of providing the Service
+        (for example, sending a product image to our AI provider for ingredient
+        recognition and returning the result to you).
+      </p>
+      <p>
+        You represent that you have all necessary rights to submit User Content
+        and that it does not infringe any third-party rights or applicable laws.
+      </p>
+    </div>
+  </div>
+
+  <!-- ─── 7. THIRD PARTY SERVICES ─── -->
+  <div class="section" id="thirdparty">
+    <h2>7. Third-Party Services</h2>
+    <div class="card">
+      <p>
+        The Service relies on the following third-party services:
+      </p>
+      <ul>
+        <li>
+          <b>Anthropic</b> — for AI-powered ingredient recognition from
+          scanned product images.
+        </li>
+        <li>
+          <b>Google Firebase</b> — for analytics, crash reporting, and
+          diagnostics.
+        </li>
+        <li>
+          <b>Google Play / Apple App Store</b> — for app distribution, billing,
+          and subscription management.
+        </li>
+      </ul>
+      <p>
+        We are not responsible for third-party services outside of our control.
+        Your use of such services may be subject to their separate terms and
+        privacy policies.
+      </p>
+    </div>
+  </div>
+
+  <!-- ─── 8. SKINCARE DISCLAIMER ─── -->
+  <div class="section" id="disclaimer">
+    <h2>8. Skincare Information Disclaimer</h2>
+    <div class="card">
+      <p>
+        <b>ShelfSkin is not a medical application. It is not intended to
+        diagnose, treat, cure, or prevent any disease or skin condition.</b>
+      </p>
+      <p>
+        The Service is powered by artificial intelligence and provides general
+        skincare information for educational purposes only. It is not a
+        substitute for professional dermatological consultation.
+      </p>
+      <p>
+        Specifically:
+      </p>
+      <ul>
+        <li>
+          <b>AI-generated results:</b> Ingredient detection, conflict analysis,
+          synergy identification, and personalized tips are generated using
+          artificial intelligence. AI systems can make errors. We do not
+          guarantee the accuracy, completeness, or reliability of any
+          AI-generated output.
+        </li>
+        <li>
+          <b>Not medical advice:</b> Phrases such as "may irritate," "consider
+          separating," or "best used separately" reflect general skincare best
+          practices and are not diagnoses, prescriptions, or medical directives.
+        </li>
+        <li>
+          <b>Scan accuracy:</b> Scan results depend on image quality, label
+          legibility, and AI model capability. We do not guarantee that every
+          ingredient will be correctly identified or that all conflicts will
+          be detected.
+        </li>
+        <li>
+          <b>Individual variation:</b> Ingredient interactions may vary by
+          product formulation, concentration, individual skin sensitivity,
+          region, and product reformulations. What applies generally may not
+          apply to your specific situation.
+        </li>
+        <li>
+          <b>Expiry estimates:</b> Expiry tracking is based on dates you enter
+          or general Period After Opening (PAO) estimates. Actual product shelf
+          life may vary by storage conditions and formulation.
+        </li>
+        <li>
+          <b>No outcome guarantee:</b> We make no representations or warranties
+          that following any information, tip, or recommendation provided by
+          ShelfSkin will produce any particular skincare result or prevent any
+          adverse reaction.
+        </li>
+      </ul>
+      <p>
+        <b>Always consult a qualified dermatologist or healthcare provider for
+        skin concerns, allergies, or adverse reactions.</b>
+      </p>
+    </div>
+  </div>
+
+  <!-- ─── 9. DISCLAIMERS (LEGAL) ─── -->
+  <div class="section" id="warranty">
+    <h2>9. Warranty Disclaimer</h2>
+    <div class="card">
+      <p>
+        The Service is provided "as is" and "as available", without warranties
+        of any kind, whether express, implied, or statutory, to the maximum
+        extent permitted by law.
+      </p>
+      <p>
+        We do not warrant that:
+      </p>
+      <ul>
+        <li>The Service will be uninterrupted, error-free, or secure</li>
+        <li>AI-generated scan results or ingredient detection will be complete or accurate</li>
+        <li>Conflict, synergy, or other AI-generated analysis will apply to your specific situation</li>
+        <li>Tips or recommendations will produce any particular skincare outcome</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ─── 10. LIABILITY ─── -->
+  <div class="section" id="liability">
+    <h2>10. Limitation of Liability</h2>
+    <div class="card">
+      <p>
+        To the maximum extent permitted by law, AOHSTD will not be liable for
+        any indirect, incidental, special, consequential, or punitive damages,
+        or any loss of profits or revenues, whether incurred directly or
+        indirectly, or any loss of data, use, goodwill, or other intangible
+        losses, resulting from:
+      </p>
+      <ul>
+        <li>Your access to or use of (or inability to access or use) the Service</li>
+        <li>Any inaccuracy, error, or omission in AI-generated scan results, conflict detection, synergy identification, or recommendations</li>
+        <li>Any skin reaction, irritation, or adverse effect resulting from following information provided by the Service</li>
+        <li>Any decision made or action taken based on information provided by the Service</li>
+        <li>Any conduct or content of any third party</li>
+        <li>Unauthorized access, use, or alteration of your data</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ─── 11. IP ─── -->
+  <div class="section" id="ip">
+    <h2>11. Intellectual Property</h2>
+    <div class="card">
+      <p>
+        The Service (including software, design, text, graphics, icons, and
+        branding) is owned by AOHSTD or its licensors and is protected by
+        intellectual property laws. These Terms do not grant you any rights to
+        use AOHSTD or ShelfSkin trademarks, logos, or branding without prior
+        written permission.
+      </p>
+    </div>
+  </div>
+
+  <!-- ─── 12. TERMINATION ─── -->
+  <div class="section" id="termination">
+    <h2>12. Termination</h2>
+    <div class="card">
+      <p>
+        We may suspend or terminate access to the Service at any time if we
+        reasonably believe you have violated these Terms, or if required to
+        comply with law or protect the Service.
+      </p>
+      <p>
+        You may stop using the Service at any time. You can delete all your
+        data through <span class="kbd">Profile → Delete All Data</span>.
+        Sections that by their nature should survive termination (including
+        disclaimers and limitation of liability) will survive.
+      </p>
+    </div>
+  </div>
+
+  <!-- ─── 13. CHANGES ─── -->
+  <div class="section" id="changes">
+    <h2>13. Changes to These Terms</h2>
+    <div class="card">
+      <p>
+        We may update these Terms from time to time. The updated version will
+        be indicated by the revised Effective Date above. Continued use of the
+        Service after changes become effective constitutes acceptance of the
+        updated Terms.
+      </p>
+    </div>
+  </div>
+
+  <!-- ─── 14. LAW ─── -->
+  <div class="section" id="law">
+    <h2>14. Governing Law</h2>
+    <div class="card">
+      <p>
+        These Terms are governed by applicable laws. Where required, mandatory
+        consumer protection laws in your jurisdiction may apply and prevail.
+      </p>
+    </div>
+  </div>
+
+  <!-- ─── 15. CONTACT ─── -->
+  <div class="section" id="contact">
+    <h2>15. Contact</h2>
+    <div class="card">
+      <p>
+        Questions about these Terms? Contact
+        <a class="link" href="mailto:support@aohstd.com">support@aohstd.com</a>.
+      </p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="links">
+      <a href="/shelfskin">ShelfSkin</a>
+      <a href="/shelfskin/privacy">Privacy</a>
+      <a href="/terms">AOHSTD Terms</a>
+      <a href="mailto:support@aohstd.com">support@aohstd.com</a>
+    </div>
+    <small>© {new Date().getFullYear()} AOHSTD</small>
+  </footer>
+</BaseLayout>

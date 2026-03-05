@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="AOHSTD"
+  description="AOHSTD publishes focused mobile applications with an emphasis on quality, reliability, and transparent data practices."
+  active="home"
+>
+  <section class="hero">
+    <h1>AOHSTD</h1>
+    <p>
+      We publish focused mobile applications with an emphasis on quality, reliability, and transparent data practices.
+    </p>
+
+    <div class="actions">
+      <a class="btn primary" href="/privacy">Privacy Policy</a>
+      <a class="btn secondary" href="/terms">Terms of Use</a>
+    </div>
+
+    <div class="section-title">
+      <h2>Principles</h2>
+      <div class="line"></div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="icon">▢</div>
+        <h3>Product Clarity</h3>
+        <p>We aim for straightforward UX and predictable behavior, especially in utility apps.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">⌁</div>
+        <h3>Reliability</h3>
+        <p>We continuously improve stability and performance using diagnostics and monitoring.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">⛨</div>
+        <h3>Data Minimization</h3>
+        <p>We collect and process information only as necessary to operate, maintain, and improve the Services.</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div>
+        <b>AOHSTD</b><br />
+        <small>Mobile app publisher</small>
+      </div>
+
+      <div class="links">
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="mailto:support@aohstd.com">support@aohstd.com</a>
+      </div>
+
+      <small>© {new Date().getFullYear()} AOHSTD</small>
+    </footer>
+  </section>
+</BaseLayout>
